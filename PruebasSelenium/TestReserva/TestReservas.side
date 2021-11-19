@@ -1,0 +1,1842 @@
+{
+  "id": "13300c34-ce3d-459c-9abc-514c8357fdc4",
+  "version": "2.0",
+  "name": "TestReservas",
+  "url": "https://localhost:44347/",
+  "tests": [{
+    "id": "8a28d6ab-8251-480d-bf5b-df31087ff4d5",
+    "name": "ValidarFormularioReservas",
+    "commands": [{
+      "id": "10a60860-fd19-4617-9848-0d426f26392a",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86c055e9-a13b-4e74-a6c8-2d34fe863409",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96124fdb-cb98-4211-addd-52fe016ec1dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db9657dd-8ff7-4e84-8140-bef06058a0aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Reservas"
+    }, {
+      "id": "3a1e214f-b041-4028-86fc-512be4ef2e63",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaReserva",
+      "targets": [
+        ["id=agregarNuevaReserva", "id"],
+        ["linkText=Agregar nueva reserva", "linkText"],
+        ["css=#agregarNuevaReserva", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva reserva')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaReserva']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ca7f56e-8510-455a-b0ef-6077ec870dc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d50ac6e8-9145-46ce-a94c-b66d799e6633",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Reserva')]", "xpath:innerText"]
+      ],
+      "value": "Crear Nueva Reserva"
+    }, {
+      "id": "c37ceef1-7864-4b98-af47-72b8118c653b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3a13479d-b659-4793-ac5b-711ee0224bc0",
+    "name": "ValidarListaReservas",
+    "commands": [{
+      "id": "bd5af571-2baa-42e8-9b1b-092ec09341a9",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45322cfc-d91a-477c-acfc-07108c20da64",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombreRestaurante",
+      "targets": [
+        ["id=nombreRestaurante", "id"],
+        ["css=#nombreRestaurante", "css:finder"],
+        ["xpath=//h1[@id='nombreRestaurante']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Restaurante Lobos Marinos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a57a47e1-082b-4547-8296-09754065704f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=nombreRestaurante",
+      "targets": [
+        ["id=nombreRestaurante", "id"],
+        ["css=#nombreRestaurante", "css:finder"],
+        ["xpath=//h1[@id='nombreRestaurante']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Restaurante Lobos Marinos')]", "xpath:innerText"]
+      ],
+      "value": "Restaurante Lobos Marinos"
+    }, {
+      "id": "3ffaf1a4-cd34-449a-82ea-52a58ef2f265",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f45f518-b42d-4fb1-a7c7-cfb42edce2d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-sm-6:nth-child(1)",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-sm-6:nth-child(1)", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2aadd0a-de7f-4aff-ab88-43b7c05c6e65",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Reservas"
+    }, {
+      "id": "5440ad72-58f2-4ad8-b70a-4c94d115241d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "29bb9eb0-5383-4ee2-a7c0-dc845906edcc",
+    "name": "ValidarCamposVacios",
+    "commands": [{
+      "id": "b9ccfea7-c8b9-4215-bd8e-95d2c10b6b01",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1830a7d-231e-4de6-9a79-75490ab73721",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "143299b3-a43e-4947-965f-2c0b659f5edb",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaReserva",
+      "targets": [
+        ["id=agregarNuevaReserva", "id"],
+        ["linkText=Agregar nueva reserva", "linkText"],
+        ["css=#agregarNuevaReserva", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva reserva')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaReserva']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30f2a5ee-8d39-491a-a2ce-a05c48fe4219",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "983a6fb3-827e-4dec-b668-6da31efa2a55",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Reserva')]", "xpath:innerText"]
+      ],
+      "value": "Crear Nueva Reserva"
+    }, {
+      "id": "131ffda4-9c11-4705-830b-73b0a12c38a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=realizarReserva",
+      "targets": [
+        ["id=realizarReserva", "id"],
+        ["css=#realizarReserva", "css:finder"],
+        ["xpath=//input[@id='realizarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac9a4d8e-9c0f-4444-8101-86d6feb4bc2a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=realizarReserva",
+      "targets": [
+        ["id=realizarReserva", "id"],
+        ["css=#realizarReserva", "css:finder"],
+        ["xpath=//input[@id='realizarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a599e18b-e2bc-4f2c-95da-bbfac5769a4d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=realizarReserva",
+      "targets": [
+        ["id=realizarReserva", "id"],
+        ["css=#realizarReserva", "css:finder"],
+        ["xpath=//input[@id='realizarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8727eaf4-99ad-44fc-b6f3-945ef10fe45c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Celular-error",
+      "targets": [
+        ["id=Celular-error", "id"],
+        ["css=#Celular-error", "css:finder"],
+        ["xpath=//span[@id='Celular-error']", "xpath:attributes"],
+        ["xpath=//div[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d24394a-57bb-490a-9491-22a19a40baa2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Celular-error",
+      "targets": [
+        ["id=Celular-error", "id"],
+        ["css=#Celular-error", "css:finder"],
+        ["xpath=//span[@id='Celular-error']", "xpath:attributes"],
+        ["xpath=//div[2]/span/span", "xpath:position"]
+      ],
+      "value": "El número de celular es obligatorio"
+    }, {
+      "id": "7436bd39-1ebc-44bf-82ba-c5d23cf25b46",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ba52b858-4ebe-4b8d-a73a-bb81bc53a37c",
+    "name": "ValidarNombreCliente",
+    "commands": [{
+      "id": "d5dedf58-2ad5-4fdb-a680-15a6f3c618ad",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99575f1e-846b-49ff-9790-4db50b4c471a",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de09962f-d97b-4bcf-900a-ba32a1df6ab2",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaReserva",
+      "targets": [
+        ["id=agregarNuevaReserva", "id"],
+        ["linkText=Agregar nueva reserva", "linkText"],
+        ["css=#agregarNuevaReserva", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva reserva')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaReserva']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2f04d13-d4b5-4164-bfd7-e14e9c13c848",
+      "comment": "",
+      "command": "click",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19704b9e-4500-4a73-a391-6d09fa762173",
+      "comment": "",
+      "command": "type",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "987456321"
+    }, {
+      "id": "4e01735f-39b3-43b5-bc2e-78ec13be182e",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "330c569e-0c4d-4c37-a728-e1c608f63904",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dcc4e41-fe17-42f0-ac1b-8017a30838ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52b0760d-b3eb-4acd-9ee0-812fdead9bf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-11-13T23:52"
+    }, {
+      "id": "07b1f9b3-0427-42c0-8160-f0e8f0d05f41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a2016ff-67ce-4116-8293-345510f6b869",
+      "comment": "",
+      "command": "click",
+      "target": "id=MesaId",
+      "targets": [
+        ["id=MesaId", "id"],
+        ["name=MesaId", "name"],
+        ["css=#MesaId", "css:finder"],
+        ["xpath=//select[@id='MesaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dc01ea6-539c-45e2-a45e-fd3007e933ca",
+      "comment": "",
+      "command": "select",
+      "target": "id=MesaId",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "d441a550-821d-41ae-852f-d458df4d4e13",
+      "comment": "",
+      "command": "click",
+      "target": "id=realizarReserva",
+      "targets": [
+        ["id=realizarReserva", "id"],
+        ["css=#realizarReserva", "css:finder"],
+        ["xpath=//input[@id='realizarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9216937-6463-4be3-bd32-7afdad30220b",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombreCliente-error",
+      "targets": [
+        ["id=NombreCliente-error", "id"],
+        ["css=#NombreCliente-error", "css:finder"],
+        ["xpath=//span[@id='NombreCliente-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce7f919f-70c6-49bf-8444-f93531e72819",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=NombreCliente-error",
+      "targets": [
+        ["id=NombreCliente-error", "id"],
+        ["css=#NombreCliente-error", "css:finder"],
+        ["xpath=//span[@id='NombreCliente-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "El nombre del cliente es obligatorio"
+    }, {
+      "id": "f5daae0d-806d-4917-9a50-62c9aad209a3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa7db293-d3ce-4dc8-ae6a-3edd6ab8380c",
+    "name": "ValidarCelularCliente",
+    "commands": [{
+      "id": "fdd30dfe-e65f-4bdc-8b15-7dce8ed4f82d",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5320522a-287c-4b0c-8235-303229c94120",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c78da4-a5eb-4b9c-acf3-471709f2dafd",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaReserva",
+      "targets": [
+        ["id=agregarNuevaReserva", "id"],
+        ["linkText=Agregar nueva reserva", "linkText"],
+        ["css=#agregarNuevaReserva", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva reserva')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaReserva']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c68be5ac-5d90-4694-98ee-d3cd9ebdba9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0abb987-cf9d-4fd3-84fe-ff219329c643",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Reserva')]", "xpath:innerText"]
+      ],
+      "value": "Crear Nueva Reserva"
+    }, {
+      "id": "76fa9fc4-450b-41e0-a9c7-9738566ade0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dcb0229-b537-4348-a476-1e3e04b542f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jose Perez"
+    }, {
+      "id": "f060dcb1-b108-40e5-a4c6-dd415696d51a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39681706-9bd2-452a-b511-457a68552355",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e033297-0cd7-4c85-bb86-176356aba714",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9aee97f-3571-4246-a09e-0916a019481f",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85344328-abf1-4641-85e7-682d44cf56c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e58e91a3-4745-40dc-95b6-d27fb5174b57",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4b4e59b-4eda-4dd2-b153-f2f6e4b39f05",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9f8acba-6160-44cd-9ec6-7c8d756b3389",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b6b4ad4-d07d-4b2e-88db-21f3b2493087",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-11-19T12:00"
+    }, {
+      "id": "6202dd31-a455-47cb-8c16-dc404ffbdd75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2)",
+      "targets": [
+        ["css=.row:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c017b6-e0cf-4f39-873d-b1e58182d7ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=MesaId",
+      "targets": [
+        ["id=MesaId", "id"],
+        ["name=MesaId", "name"],
+        ["css=#MesaId", "css:finder"],
+        ["xpath=//select[@id='MesaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "349a4ddc-dc6c-49f2-bb7c-c2649e9e94e8",
+      "comment": "",
+      "command": "select",
+      "target": "id=MesaId",
+      "targets": [],
+      "value": "label=106"
+    }, {
+      "id": "7636daf4-0bb9-498f-85f1-63a802e271b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=realizarReserva",
+      "targets": [
+        ["id=realizarReserva", "id"],
+        ["css=#realizarReserva", "css:finder"],
+        ["xpath=//input[@id='realizarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdb59ad7-1cef-4e69-b557-9533a5478470",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "70,91"
+    }, {
+      "id": "392b709b-27ad-4abd-a660-bdbb0a89e8d9",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "70,91"
+    }, {
+      "id": "8a44556b-770c-4f25-8358-39f3a963356e",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "70,91"
+    }, {
+      "id": "e48dd849-3df0-417b-8e44-f9b6a7002715",
+      "comment": "",
+      "command": "click",
+      "target": "id=Celular-error",
+      "targets": [
+        ["id=Celular-error", "id"],
+        ["css=#Celular-error", "css:finder"],
+        ["xpath=//span[@id='Celular-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9d39864-c979-4e30-a1c9-663497ab5d31",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Celular-error",
+      "targets": [
+        ["id=Celular-error", "id"],
+        ["css=#Celular-error", "css:finder"],
+        ["xpath=//span[@id='Celular-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "El número de celular es obligatorio"
+    }, {
+      "id": "17a3d26e-74a4-4ba2-8a93-951f98a1406f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "df14e78d-136f-47f1-8c4c-2c784a72b28c",
+    "name": "ValidarFechaReserva",
+    "commands": [{
+      "id": "0f2fcf06-c1d2-4591-b4bf-00bbbecf560b",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09c09082-e6f3-42db-9ace-4d7588a03dbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1356162a-e788-4d06-bbef-d19ed56d6f3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaReserva",
+      "targets": [
+        ["id=agregarNuevaReserva", "id"],
+        ["linkText=Agregar nueva reserva", "linkText"],
+        ["css=#agregarNuevaReserva", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva reserva')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaReserva']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c465a832-083a-4089-8f05-20fd5b41a7fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac87244d-9a8d-4b92-80c0-0f2c35988abd",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jose Perez"
+    }, {
+      "id": "e12f14e1-711d-4548-be56-c1c7f71a0829",
+      "comment": "",
+      "command": "click",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02e79b5a-951f-4af0-b5c2-7ecf09686df1",
+      "comment": "",
+      "command": "type",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "987456321"
+    }, {
+      "id": "cb314216-3007-43a4-955e-a6530aea6eca",
+      "comment": "",
+      "command": "click",
+      "target": "id=MesaId",
+      "targets": [
+        ["id=MesaId", "id"],
+        ["name=MesaId", "name"],
+        ["css=#MesaId", "css:finder"],
+        ["xpath=//select[@id='MesaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ca1d3a6-e57e-4ad6-bd4d-ca9edf895be2",
+      "comment": "",
+      "command": "select",
+      "target": "id=MesaId",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "72e7f717-479c-4964-826c-53b4bb4af75b",
+      "comment": "",
+      "command": "click",
+      "target": "id=realizarReserva",
+      "targets": [
+        ["id=realizarReserva", "id"],
+        ["css=#realizarReserva", "css:finder"],
+        ["xpath=//input[@id='realizarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff42c58b-76d4-4b3f-88fd-1922f71f9273",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=FechaReserva-error",
+      "targets": [
+        ["id=FechaReserva-error", "id"],
+        ["css=#FechaReserva-error", "css:finder"],
+        ["xpath=//span[@id='FechaReserva-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "La Fecha de Reserva es obligatoria"
+    }, {
+      "id": "309f6402-c02c-4ff1-bc55-d1b0f0f54469",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d85b0442-31b7-44ab-9032-65509bcd329b",
+    "name": "ValidarRegistrarReserva",
+    "commands": [{
+      "id": "05ce671b-e4fa-4ed5-a4ae-a19f34f32d1d",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad4b02c9-48ce-401d-ad34-0850b840a525",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a5788c8-ad74-472e-a8f7-00ff83f80e84",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaReserva",
+      "targets": [
+        ["id=agregarNuevaReserva", "id"],
+        ["linkText=Agregar nueva reserva", "linkText"],
+        ["css=#agregarNuevaReserva", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva reserva')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaReserva']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva reserva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39ff08a2-9369-41b7-aac8-18e9f06c3b54",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3b6d6c-6ebd-4dab-89cf-37e3af116911",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jose Perez"
+    }, {
+      "id": "8300efc0-e616-493d-94ad-b2efb1c22c7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b3a71c3-6145-429a-b79b-5e5995118cad",
+      "comment": "",
+      "command": "type",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "987456123"
+    }, {
+      "id": "5b65b4ed-96f9-456d-beba-6aa779d274a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ad5b2c8-b8bc-4d0c-a0a2-0ca6bb5d1e87",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b74d95f8-5c6f-4982-9d53-b6029e1836f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2284b19-3ece-4e1f-aef2-70155e9e3b54",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-11-15T12:00"
+    }, {
+      "id": "861fd5d4-888c-4468-95cb-f149173e5fd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f405ccf-0bbb-46a2-b909-bf1343ca0172",
+      "comment": "",
+      "command": "click",
+      "target": "id=MesaId",
+      "targets": [
+        ["id=MesaId", "id"],
+        ["name=MesaId", "name"],
+        ["css=#MesaId", "css:finder"],
+        ["xpath=//select[@id='MesaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbe6e807-17e9-41af-8e58-62db0dbe60fb",
+      "comment": "",
+      "command": "select",
+      "target": "id=MesaId",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "888d7626-a53d-4a20-8352-70a2fbb34ea2",
+      "comment": "",
+      "command": "click",
+      "target": "id=realizarReserva",
+      "targets": [
+        ["id=realizarReserva", "id"],
+        ["css=#realizarReserva", "css:finder"],
+        ["xpath=//input[@id='realizarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90f36bb5-88f8-44f4-ad10-f8b8eef91e11",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b9a0b61-e178-4c4c-a8c9-35b53e731dd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f78fd49-1aa3-4ec7-8b00-54d1881c98e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Reservas"
+    }, {
+      "id": "dd6a9a11-b1df-4dd9-b4a0-72900d5ff018",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec88e423-01e8-4b17-9179-a19b68de8ef5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "80fdbef9-5d95-4dbd-89b4-752f5bc42028",
+    "name": "ValidarEditarReserva",
+    "commands": [{
+      "id": "18479c67-b9de-4714-b6a4-01c266424150",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c58845a-ba82-4cf0-86dd-d26277ca52a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab8afd04-144a-4dac-a451-6488497a5549",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "680d518b-0aac-4895-b20c-6a2ce027b8ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Reservas"
+    }, {
+      "id": "1600c803-0e61-4090-a2ab-2033c4623cf6",
+      "comment": "",
+      "command": "click",
+      "target": "id=editReserva",
+      "targets": [
+        ["css=tr:nth-child(3) #editReserva", "css:finder"],
+        ["xpath=(//a[contains(text(),'Editar')])[3]", "xpath:link"],
+        ["xpath=(//a[@id='editReserva'])[3]", "xpath:attributes"],
+        ["xpath=//table[@id='datatable']/tbody/tr[3]/td[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Reserva/Edit/27')]", "xpath:href"],
+        ["xpath=//tr[3]/td[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8081c927-c777-4b11-9196-ee274e20bb55",
+      "comment": "",
+      "command": "click",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbb5a658-f1b4-45bd-852a-04099d7a515f",
+      "comment": "",
+      "command": "type",
+      "target": "id=NombreCliente",
+      "targets": [
+        ["id=NombreCliente", "id"],
+        ["name=NombreCliente", "name"],
+        ["css=#NombreCliente", "css:finder"],
+        ["xpath=//input[@id='NombreCliente']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Jose Perez Huanca"
+    }, {
+      "id": "1ed4b477-9912-4403-9875-7e681a981f6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63972ce5-079d-4cc3-9851-80eddb225256",
+      "comment": "",
+      "command": "type",
+      "target": "id=Celular",
+      "targets": [
+        ["id=Celular", "id"],
+        ["name=Celular", "name"],
+        ["css=#Celular", "css:finder"],
+        ["xpath=//input[@id='Celular']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "987456145"
+    }, {
+      "id": "450e11d7-a9f5-47c5-a417-b7dd01602089",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1356681b-d370-4330-a01f-913d53245d21",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3c76563-1a5d-40e5-b27f-f98a6053f8c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2cf573a-4b4d-4109-af05-239646f58c75",
+      "comment": "",
+      "command": "type",
+      "target": "id=FechaReserva",
+      "targets": [
+        ["id=FechaReserva", "id"],
+        ["name=FechaReserva", "name"],
+        ["css=#FechaReserva", "css:finder"],
+        ["xpath=//input[@id='FechaReserva']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2021-11-16T12:00"
+    }, {
+      "id": "0b85c2ff-39be-4b4f-8bfc-5b97370f08a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dc038de-1b44-4b31-a84e-93f30c9dfcc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=MesaId",
+      "targets": [
+        ["id=MesaId", "id"],
+        ["name=MesaId", "name"],
+        ["css=#MesaId", "css:finder"],
+        ["xpath=//select[@id='MesaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf4c4174-3303-43ba-bc39-99fcc734723a",
+      "comment": "",
+      "command": "select",
+      "target": "id=MesaId",
+      "targets": [],
+      "value": "label=106"
+    }, {
+      "id": "d4d92895-8476-47f6-9742-7219477a14ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=editarReserva",
+      "targets": [
+        ["id=editarReserva", "id"],
+        ["css=#editarReserva", "css:finder"],
+        ["xpath=//input[@id='editarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "563ef9df-4acb-4d8f-ad64-75ec87995abb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05967686-ad84-450f-949e-48046da3110b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "La reserva se ha editado correctamente\\n×"
+    }, {
+      "id": "a275799e-4fb2-4241-9ed9-281c3ee4809d",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a9a1663-a1db-453c-9f2c-6a80e1a7e514",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2862b809-9b08-46fb-99f4-cefc50a63e46",
+    "name": "ValidarEliminarreserva",
+    "commands": [{
+      "id": "5bfceb66-4c67-4dbd-b024-c66f5d067d69",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27b588cf-18ec-4d06-9d0d-b08f61806409",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f4c8aa3-895b-469d-a901-1920c1fe3f55",
+      "comment": "",
+      "command": "click",
+      "target": "id=deleteReserva",
+      "targets": [
+        ["css=tr:nth-child(3) #deleteReserva", "css:finder"],
+        ["xpath=(//a[contains(text(),'Eliminar')])[3]", "xpath:link"],
+        ["xpath=(//a[@id='deleteReserva'])[3]", "xpath:attributes"],
+        ["xpath=//table[@id='datatable']/tbody/tr[3]/td[5]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Reserva/Delete/27')]", "xpath:href"],
+        ["xpath=//tr[3]/td[5]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f302454d-e9df-4a6e-9a5e-dcb1000aacba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12",
+      "targets": [
+        ["css=.col-sm-12", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "596018e0-6f98-44cc-9bf2-638cfc030a76",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Eliminar Reserva')]", "xpath:innerText"]
+      ],
+      "value": "Eliminar Reserva"
+    }, {
+      "id": "10db2747-a8c7-4547-95cc-4c4f90e5233b",
+      "comment": "",
+      "command": "click",
+      "target": "id=eliminarReserva",
+      "targets": [
+        ["id=eliminarReserva", "id"],
+        ["css=#eliminarReserva", "css:finder"],
+        ["xpath=//input[@id='eliminarReserva']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f13029d-e70b-433d-a45a-bae6c0a39e36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34300dc5-a7b2-42ad-b3b5-f72fbeb939ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": "La reserva se ha eliminado correctamente\\n×"
+    }, {
+      "id": "7dccc7c7-0fa3-4a14-aaa6-d391207a5278",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60fe25e0-f70a-41a7-b006-0bdcdb77d983",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fe8adaa5-4fd7-41af-86a7-bfbf96f79712",
+    "name": "ValidarBuscarReservas",
+    "commands": [{
+      "id": "87300d5b-a7b9-438f-9a60-671c8e16d174",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d57cb3d-b9f7-4a8a-8199-9eb89879cad3",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9398992-aff2-430b-9387-6512cc48dc57",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cb5849b-1d18-43b6-861b-66ca85f9de89",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Reservas"
+    }, {
+      "id": "6d09a03a-d1fc-44d7-9732-fcba290788d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=criterio",
+      "targets": [
+        ["id=criterio", "id"],
+        ["name=criterio", "name"],
+        ["css=#criterio", "css:finder"],
+        ["xpath=//input[@id='criterio']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8305bf48-027a-4486-ba7c-62e053f48c8e",
+      "comment": "",
+      "command": "type",
+      "target": "id=criterio",
+      "targets": [
+        ["id=criterio", "id"],
+        ["name=criterio", "name"],
+        ["css=#criterio", "css:finder"],
+        ["xpath=//input[@id='criterio']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Na"
+    }, {
+      "id": "4edb69e8-0950-4159-a9db-0739a29d1b78",
+      "comment": "",
+      "command": "click",
+      "target": "id=buscar",
+      "targets": [
+        ["id=buscar", "id"],
+        ["css=#buscar", "css:finder"],
+        ["xpath=//button[@id='buscar']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a753a108-e6a9-4277-bb08-8e4e58192460",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody td:nth-child(1)",
+      "targets": [
+        ["css=tbody td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Juan Galvez Rojas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79cd7f45-eb3b-486a-a5ab-7353dd0d8daf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tbody td:nth-child(1)",
+      "targets": [
+        ["css=tbody td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//tbody/tr/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Juan Galvez Rojas')]", "xpath:innerText"]
+      ],
+      "value": "Nataly Cerquin"
+    }, {
+      "id": "26c518f7-49c3-4635-8b24-f722af2fe46d",
+      "comment": "",
+      "command": "click",
+      "target": "id=buscar",
+      "targets": [
+        ["id=buscar", "id"],
+        ["css=#buscar", "css:finder"],
+        ["xpath=//button[@id='buscar']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd9a9f06-796e-4ab0-9713-ca50aa9fb293",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebfd2ff0-44eb-4b05-a71c-409d50ef6db8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Reservas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Reservas"
+    }, {
+      "id": "8cb48e81-49c4-47a5-9485-760e98e615b8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b37c9bd2-e35b-4254-a361-c023015d1cc3",
+    "name": "ValidarBusquedaReservas",
+    "commands": [{
+      "id": "6ebd7047-f46a-4118-ae89-3e02a1aaca95",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4ccd2a5-9fb0-4ba7-bab3-fdbff0b7b550",
+      "comment": "",
+      "command": "click",
+      "target": "id=goReservas",
+      "targets": [
+        ["id=goReservas", "id"],
+        ["linkText=Reservas", "linkText"],
+        ["css=#goReservas", "css:finder"],
+        ["xpath=//a[contains(text(),'Reservas')]", "xpath:link"],
+        ["xpath=//a[@id='goReservas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Reserva')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reservas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af2bec77-d6ab-446c-9e6d-b1acb88f1376",
+      "comment": "",
+      "command": "click",
+      "target": "id=criterio",
+      "targets": [
+        ["id=criterio", "id"],
+        ["name=criterio", "name"],
+        ["css=#criterio", "css:finder"],
+        ["xpath=//input[@id='criterio']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0882b57-c41b-4b56-af60-c7a6df918e76",
+      "comment": "",
+      "command": "type",
+      "target": "id=criterio",
+      "targets": [
+        ["id=criterio", "id"],
+        ["name=criterio", "name"],
+        ["css=#criterio", "css:finder"],
+        ["xpath=//input[@id='criterio']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Luis"
+    }, {
+      "id": "194477ad-ce5b-4e1c-a590-57fc4feb6098",
+      "comment": "",
+      "command": "click",
+      "target": "id=buscar",
+      "targets": [
+        ["id=buscar", "id"],
+        ["css=#buscar", "css:finder"],
+        ["xpath=//button[@id='buscar']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd478b3-a238-4d99-ab29-005b5c68a9e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'No existen registros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c0401e8-edf4-4213-a536-cef9e3e8b6be",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'No existen registros')]", "xpath:innerText"]
+      ],
+      "value": "No existen registros"
+    }, {
+      "id": "397db0fa-9fdc-4735-830a-bcfa89ba34f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "846dbf9e-99a3-4623-a21e-663abcb22b52",
+      "comment": "",
+      "command": "click",
+      "target": "id=buscar",
+      "targets": [
+        ["id=buscar", "id"],
+        ["css=#buscar", "css:finder"],
+        ["xpath=//button[@id='buscar']", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "997b3174-1d07-4d10-b354-0f0a377a8856",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e7b8f2c8-4508-415d-8195-c74906296b8d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8a28d6ab-8251-480d-bf5b-df31087ff4d5"]
+  }],
+  "urls": ["https://localhost:44347/"],
+  "plugins": []
+}

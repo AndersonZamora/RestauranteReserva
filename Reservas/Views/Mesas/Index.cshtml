@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Reservas.Models.Mesa>
+
+@{
+    ViewData["Title"] = "Lista de Mesas";
+    Layout = "/Views/Shared/_LayoutRes.cshtml";
+}
+
+<div class="container">
+
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            @TempData["mensaje"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Lista de Mesas</h3>
+        </div>
+        <div class="col-sm-6">
+            <a class="btn btn-success d-block" id="agregarNuevaMesa" asp-action="Create" asp-controller="Mesas">Agregar nueva mesa</a>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        @if (Model.Count() > 0)
+        {
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Número Mesa</td>
+                        <td>Número Personas</td>
+                        <td>Descripción</td>
+                        <td>Estado</td>
+                        <td>Acciones</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.NumeroMesa</td>
+                            <td>@item.NumeroPersonas</td>
+                            <td>@item.Descripcion</td>
+
+                            @if (@item.Estado == 1)
+                            {
+                                <td>Creado</td>
+                            }
+
+                            @if (@item.Estado == 2)
+                            {
+                                <td>Libre</td>
+                            }
+
+                            @if (@item.Estado == 3)
+                            {
+                                <td>Reservado</td>
+                            }
+
+                            @if (item.Estado == 1 | item.Estado == 2)
+                            {
+                                <td>
+                                    <a asp-controller="Mesas" asp-action="Edit" id="editMesa" asp-route-id="@item.Id" class="btn btn-warning">Editar</a>
+                                    <a asp-controller="Mesas" asp-action="Delete" id="deleteMesa" asp-route-id="@item.Id" class="btn btn-danger">Eliminar</a>
+                                </td>
+                            }
+
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No existen registros</p>
+        }
+    </div>
+
+</div>

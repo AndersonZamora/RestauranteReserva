@@ -1,0 +1,64 @@
+﻿@model Reservas.Models.Mesa
+
+
+@{
+    ViewData["Title"] = "Crear nueva mesa";
+    Layout = "/Views/Shared/_LayoutRes.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Crear Nueva Mesa</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="card">
+                <div class="card-body">
+
+                    <form method="post" asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="NumeroMesa" class="control-label"> Número Mesa</label>
+                            <input id="NumeroMesa" asp-for="NumeroMesa" class="form-control" />
+                            <span asp-validation-for="NumeroMesa" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="NumeroPersonas" class="control-label"> Número Personas</label>
+                            <input asp-for="NumeroPersonas" id="NumeroPersonas" class="form-control" />
+                            <span asp-validation-for="NumeroPersonas" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Descripcion" class="control-label">Descripción</label>
+                            <input asp-for="Descripcion" id="Descripcion" class="form-control" />
+                            <span asp-validation-for="Descripcion" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Estado" class="control-label"></label>
+                            <select asp-for="Estado" id="Estado" class="form-control">
+                                <option selected>Seleccionar estado de mesa</option>
+                                <option value="1">Creada</option>
+                                <option value="2">Libre</option>
+                                <option value="3">Reservada</option>
+                            </select>
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" id="crearMesa" value="Crear Mesa" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{<partial name="_ValidationScriptsPartial" /> }
+}

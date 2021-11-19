@@ -1,0 +1,1306 @@
+{
+  "id": "323069b6-2bdb-41b0-8757-aa1e27da012c",
+  "version": "2.0",
+  "name": "TestMesa",
+  "url": "https://localhost:44347/",
+  "tests": [{
+    "id": "a2f4c679-30b9-49a0-92da-8e3dbded51b7",
+    "name": "ValidarListaMesas",
+    "commands": [{
+      "id": "f6b65d98-a690-4c13-8944-2393a9201276",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a247b54-f298-4ffd-8265-091d42883039",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e6fba68-a2ae-4940-af97-0561ec958a41",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombreRestaurante",
+      "targets": [
+        ["id=nombreRestaurante", "id"],
+        ["css=#nombreRestaurante", "css:finder"],
+        ["xpath=//h1[@id='nombreRestaurante']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Restaurante Lobos Marinos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f40e3d96-aead-440e-89e9-5e5528a30901",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=nombreRestaurante",
+      "targets": [
+        ["id=nombreRestaurante", "id"],
+        ["css=#nombreRestaurante", "css:finder"],
+        ["xpath=//h1[@id='nombreRestaurante']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Restaurante Lobos Marinos')]", "xpath:innerText"]
+      ],
+      "value": "Restaurante Lobos Marinos"
+    }, {
+      "id": "607deb6c-f21e-4782-8093-6d59d7498614",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39fe5bae-be19-47bc-a01a-7ee98b345fdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6:nth-child(1)",
+      "targets": [
+        ["css=.col-sm-6:nth-child(1)", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d92ab00-28bd-4b07-85fb-3b4151d1e90f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Mesas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Mesas"
+    }, {
+      "id": "51c82864-6844-4b2a-a837-06434ba5fa87",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "26f6b185-ac93-4270-b833-ae279e223ced",
+    "name": "CargarFormularioMesa",
+    "commands": [{
+      "id": "d72eb3e3-eb97-4dba-afeb-a5bf399b5d17",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a8f34b5-4746-4583-8661-f71008675761",
+      "comment": "",
+      "command": "click",
+      "target": "id=nombreRestaurante",
+      "targets": [
+        ["id=nombreRestaurante", "id"],
+        ["css=#nombreRestaurante", "css:finder"],
+        ["xpath=//h1[@id='nombreRestaurante']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Restaurante Lobos Marinos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "505a63f1-9903-47b0-bc51-85095726bf57",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=nombreRestaurante",
+      "targets": [
+        ["id=nombreRestaurante", "id"],
+        ["css=#nombreRestaurante", "css:finder"],
+        ["xpath=//h1[@id='nombreRestaurante']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Restaurante Lobos Marinos')]", "xpath:innerText"]
+      ],
+      "value": "Restaurante Lobos Marinos"
+    }, {
+      "id": "6a2bedec-400e-49e3-9e5e-9106839ea9d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e20a724-191c-4e30-9db7-a2d9cac72061",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25dfc945-d6b8-4e81-93e5-2bdfd45602a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Mesas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Mesas"
+    }, {
+      "id": "9e698d54-da0f-49ab-a5a4-b51784e89faa",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaMesa",
+      "targets": [
+        ["id=agregarNuevaMesa", "id"],
+        ["linkText=Agregar nueva mesa", "linkText"],
+        ["css=#agregarNuevaMesa", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva mesa')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaMesa']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82de9d60-adcd-4e3d-a094-4aa6caf21153",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdbaa2d6-2213-413c-9681-c92f30a82b10",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Mesa')]", "xpath:innerText"]
+      ],
+      "value": "Crear Nueva Mesa"
+    }, {
+      "id": "d254ba59-c93d-4a2c-a3f5-3a35bbe27336",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "983d271f-c2ab-427d-bcf3-2030ef78783f",
+    "name": "ValidarFormularioMesa",
+    "commands": [{
+      "id": "58f21e0f-590d-4e7b-a6ec-c0b95d78bef2",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2e58710-0d85-45f3-aa4f-df310d9d58a0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e2c7b5f-e06b-4e93-8e9c-3d5618695081",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39995846-b446-457a-9d0d-c977b6a40b5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaMesa",
+      "targets": [
+        ["id=agregarNuevaMesa", "id"],
+        ["linkText=Agregar nueva mesa", "linkText"],
+        ["css=#agregarNuevaMesa", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva mesa')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaMesa']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9f9312e-7ff1-4b10-9740-f35440de3c1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2524b071-6f2f-47b2-af2d-46d52ef606a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12",
+      "targets": [
+        ["css=.col-sm-12", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33d08dfc-39d3-4e5a-bad9-3e356ba444e4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Crear Nueva Mesa')]", "xpath:innerText"]
+      ],
+      "value": "Crear Nueva Mesa"
+    }, {
+      "id": "d188b5d4-9432-44e9-81de-8b0a14489269",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2e08ccf6-2cbc-4117-84e0-765da18ddb6e",
+    "name": "ValidarNumeroMesa",
+    "commands": [{
+      "id": "ab6a55ea-fa81-4bef-9431-c4b6c5e2be5b",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b0f1e3e-2aa4-4c7f-a306-66187c95e285",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69808944-964b-4199-80ce-ecbfa38dc8ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaMesa",
+      "targets": [
+        ["id=agregarNuevaMesa", "id"],
+        ["linkText=Agregar nueva mesa", "linkText"],
+        ["css=#agregarNuevaMesa", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva mesa')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaMesa']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9488584-2f03-4b4f-bc8f-ae354e36c335",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b790d61-267f-4477-9c92-ed3cb59a4051",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "a03f59d5-3afe-4655-8be1-8f52a6eef272",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53b9bf58-cca9-49a4-a51b-d180cf2940c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Mesa pequeña"
+    }, {
+      "id": "7bafa147-6379-49cb-81af-68a4247af63b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Estado",
+      "targets": [
+        ["id=Estado", "id"],
+        ["name=Estado", "name"],
+        ["css=#Estado", "css:finder"],
+        ["xpath=//select[@id='Estado']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6041d920-8e80-4e56-92ce-58eadf72c28b",
+      "comment": "",
+      "command": "select",
+      "target": "id=Estado",
+      "targets": [],
+      "value": "label=Creada"
+    }, {
+      "id": "8a9ec096-8a18-4465-9883-e20d2567e2ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e24fc345-1603-4d12-9b59-42d918062109",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "24,106"
+    }, {
+      "id": "0fffbc55-5916-4447-a775-fd396d1b94c2",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "24,106"
+    }, {
+      "id": "9b17cb98-290c-43ad-b723-3189733bdca7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8a2b8c39-fdba-4ee9-832f-7d14fd29af00",
+    "name": "ValidarNumeroPersonas",
+    "commands": [{
+      "id": "cb54953f-2a04-4e2d-9faf-6ce0271b5052",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f91ba03-b603-4320-a149-072a1c05ff5e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fad8a1c-82e6-4fb1-9099-92dd37432a79",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c48fca4c-f2fc-4055-a5fd-1e03c788b3d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaMesa",
+      "targets": [
+        ["id=agregarNuevaMesa", "id"],
+        ["linkText=Agregar nueva mesa", "linkText"],
+        ["css=#agregarNuevaMesa", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva mesa')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaMesa']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b8648c2-5328-4c5f-afb8-62f3aa631393",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b336d43-81bd-40ea-884d-b05a5afe933c",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "105"
+    }, {
+      "id": "397fa408-6a33-4a5f-8a70-ef26fe5d8e8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97e4f294-a52b-442a-bbf4-5ea92b285c2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e0e27df-a1a5-416d-8d0b-ca634d4571b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Mesar grande"
+    }, {
+      "id": "4ae53e59-d92d-4476-a9e3-67104c78d92c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Estado",
+      "targets": [
+        ["id=Estado", "id"],
+        ["name=Estado", "name"],
+        ["css=#Estado", "css:finder"],
+        ["xpath=//select[@id='Estado']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93000ddc-7eae-4428-a2da-173b5f1b8d10",
+      "comment": "",
+      "command": "select",
+      "target": "id=Estado",
+      "targets": [],
+      "value": "label=Creada"
+    }, {
+      "id": "33c98fa1-d7ee-4edb-9832-15dd63c275c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "464d3578-d24c-4353-96b7-c3819345b76a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87a1e9a7-a94f-4081-a3fe-1737bbd80e6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(2)",
+      "targets": [
+        ["css=.form-group:nth-child(2)", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4e65f60-ff4e-4a6f-989d-246b9a2fa47c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=NumeroPersonas-error",
+      "targets": [
+        ["id=NumeroPersonas-error", "id"],
+        ["css=#NumeroPersonas-error", "css:finder"],
+        ["xpath=//span[@id='NumeroPersonas-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "Número de personas para la mesa es obligatorio"
+    }, {
+      "id": "d0b11d15-33cc-4a08-a6eb-1391c53f19f0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "614a830e-cfac-4720-9058-bf6b8d38f534",
+    "name": "ValidarDescripcionMesa",
+    "commands": [{
+      "id": "8d42f7da-b456-444d-9773-8dd31d658e3b",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "816af3ff-6897-40cc-ab9e-e8da0bd1c0b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5917dbf-a9ef-4324-8714-68ee233fa0e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaMesa",
+      "targets": [
+        ["id=agregarNuevaMesa", "id"],
+        ["linkText=Agregar nueva mesa", "linkText"],
+        ["css=#agregarNuevaMesa", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva mesa')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaMesa']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "efc00f19-0136-49fb-bdd6-872bccec22e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9d54a33-96ea-4e37-8ef4-3f8a04a94b90",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "105"
+    }, {
+      "id": "3375bc6f-b56f-47c7-b923-c69a6aa3524c",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53238ccd-2a43-4a0b-b222-576e57ebeca6",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "1c5a5af4-ac98-485a-8802-4833548f085b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Estado",
+      "targets": [
+        ["id=Estado", "id"],
+        ["name=Estado", "name"],
+        ["css=#Estado", "css:finder"],
+        ["xpath=//select[@id='Estado']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55d05713-3d3c-4249-bf5d-37dc46c1f95f",
+      "comment": "",
+      "command": "select",
+      "target": "id=Estado",
+      "targets": [],
+      "value": "label=Creada"
+    }, {
+      "id": "d45a671e-156c-43c1-a8ac-76ec8e84938c",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e917c6bb-5bb6-4e50-811f-b06da28dad02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a161539-cad2-4a4c-9156-ed8cff44d32a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion-error",
+      "targets": [
+        ["id=Descripcion-error", "id"],
+        ["css=#Descripcion-error", "css:finder"],
+        ["xpath=//span[@id='Descripcion-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1563339-0db3-4316-99f5-ae677c59b582",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Descripcion-error",
+      "targets": [
+        ["id=Descripcion-error", "id"],
+        ["css=#Descripcion-error", "css:finder"],
+        ["xpath=//span[@id='Descripcion-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "La descripción de la mesa es obligatorio"
+    }, {
+      "id": "b0904af1-6d8a-4287-878c-60fa974c1e6f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "94c7b72b-9261-4e5c-83a2-b0246d7004a4",
+    "name": "ValidarEstadoMesa",
+    "commands": [{
+      "id": "2e0c6499-79fe-45b6-8388-c87cd60f6dcb",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2eb28dc8-d334-4555-8ff8-99673dc1e855",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8a649d3-8ffd-44a4-a964-0de357a050f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaMesa",
+      "targets": [
+        ["id=agregarNuevaMesa", "id"],
+        ["linkText=Agregar nueva mesa", "linkText"],
+        ["css=#agregarNuevaMesa", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva mesa')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaMesa']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a118e60-5e95-46c2-b5a6-41b4f4004641",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b1a8064-3ef3-41bb-a61c-783310258a16",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "105"
+    }, {
+      "id": "c282499d-9ca4-4edb-9b06-617058358539",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7db58d5-dfd5-4e13-8bf9-538903ca3a3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "3c6aa2a6-2cac-4ec4-a457-d441dde0a1b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa475e6f-29a5-4063-8b6a-20991c26f241",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Mesa Pequeña"
+    }, {
+      "id": "089761b9-2dc6-43fe-8a8b-9bed6756d800",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f0909ec-f513-46c5-8978-943469dfcc39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field-validation-error",
+      "targets": [
+        ["css=.field-validation-error", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "371909b8-3799-451f-85d8-7cdd968a5b66",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.field-validation-error",
+      "targets": [
+        ["css=.field-validation-error", "css:finder"],
+        ["xpath=//div[4]/span", "xpath:position"]
+      ],
+      "value": "The value 'Seleccionar estado de mesa' is not valid for Estado."
+    }, {
+      "id": "8ecec451-aff9-418b-a39d-5bb33b07ed94",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bad3562e-a7db-4155-bbd0-88295b5d2179",
+    "name": "RegistrarMesa",
+    "commands": [{
+      "id": "0ea947f0-8ca7-4e94-b66f-95991f29aebe",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc92e6ec-13fc-4229-a94a-38faff23b8b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54584861-2c96-49d8-a56f-ce586a163c67",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaMesa",
+      "targets": [
+        ["id=agregarNuevaMesa", "id"],
+        ["linkText=Agregar nueva mesa", "linkText"],
+        ["css=#agregarNuevaMesa", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar nueva mesa')]", "xpath:link"],
+        ["xpath=//a[@id='agregarNuevaMesa']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar nueva mesa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa69a745-694a-437e-ba68-28b25f0508a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81471dba-7286-490b-aa6e-e8ca02dfce4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "105"
+    }, {
+      "id": "8d6a3fec-0fbf-4f01-86ae-1f1132861efb",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "561aa525-0da6-4f00-a7e7-fee8a24e50eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "2042b0bd-77ad-4756-8e4e-7542ff15c831",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60086f9f-c28d-4e4b-ae87-83ee1d70c1ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Mesa Grande"
+    }, {
+      "id": "0851926f-9542-42dc-974d-b478f709e87a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Estado",
+      "targets": [
+        ["id=Estado", "id"],
+        ["name=Estado", "name"],
+        ["css=#Estado", "css:finder"],
+        ["xpath=//select[@id='Estado']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38088861-5d15-4df6-bc94-7d3ea659e973",
+      "comment": "",
+      "command": "select",
+      "target": "id=Estado",
+      "targets": [],
+      "value": "label=Creada"
+    }, {
+      "id": "e6ddc996-cdbd-4f13-88b2-5af9d004ed41",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearMesa",
+      "targets": [
+        ["id=crearMesa", "id"],
+        ["css=#crearMesa", "css:finder"],
+        ["xpath=//input[@id='crearMesa']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fee1138b-86f9-4c81-bab8-27640841bc84",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55482105-e1e1-4313-be7b-8ffb112fcae2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Lista de Mesas')]", "xpath:innerText"]
+      ],
+      "value": "Lista de Mesas"
+    }, {
+      "id": "66a099f0-ccf6-4dd1-92a3-1784a0ffc5a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=span",
+      "targets": [
+        ["css=span", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "527b79a0-f039-43f5-9367-f1837534f1d3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9369cd29-f039-42b2-80ad-661c1efa1b7a",
+    "name": "ValidarEditarMesa",
+    "commands": [{
+      "id": "811c7189-304d-4975-812d-39274d90ace8",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44335/Home/Index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0163f78-eec6-4599-8f4f-601c912734f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1060",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c34ecb7c-4f48-40fb-9b8d-291e69b9f9cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=goMesas",
+      "targets": [
+        ["id=goMesas", "id"],
+        ["linkText=Mesas", "linkText"],
+        ["css=#goMesas", "css:finder"],
+        ["xpath=//a[contains(text(),'Mesas')]", "xpath:link"],
+        ["xpath=//a[@id='goMesas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mesas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb8bb40-a724-4a0a-be49-17a56809d90f",
+      "comment": "",
+      "command": "click",
+      "target": "id=editMesa",
+      "targets": [
+        ["css=tr:nth-child(6) #editMesa", "css:finder"],
+        ["xpath=(//a[contains(text(),'Editar')])[5]", "xpath:link"],
+        ["xpath=(//a[@id='editMesa'])[5]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Mesas/Edit/7')]", "xpath:href"],
+        ["xpath=//tr[6]/td[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "640d900e-a9e4-4545-9392-a0d046747a1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e7c65e4-637a-437e-9365-0c2347330329",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroMesa",
+      "targets": [
+        ["id=NumeroMesa", "id"],
+        ["name=NumeroMesa", "name"],
+        ["css=#NumeroMesa", "css:finder"],
+        ["xpath=//input[@id='NumeroMesa']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "106"
+    }, {
+      "id": "fcbe41e3-01ab-422a-953a-4f52d219d4f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1fd4102-6db6-42a5-8dc3-9a4350ef1cf5",
+      "comment": "",
+      "command": "type",
+      "target": "id=NumeroPersonas",
+      "targets": [
+        ["id=NumeroPersonas", "id"],
+        ["name=NumeroPersonas", "name"],
+        ["css=#NumeroPersonas", "css:finder"],
+        ["xpath=//input[@id='NumeroPersonas']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "37918c7e-cff8-48e6-90f4-7adad9be2f76",
+      "comment": "",
+      "command": "click",
+      "target": "id=editarMesa",
+      "targets": [
+        ["id=editarMesa", "id"],
+        ["css=#editarMesa", "css:finder"],
+        ["xpath=//input[@id='editarMesa']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00d1b040-fb7b-4136-bee4-29970aee43c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close",
+      "targets": [
+        ["css=.close", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d573b5-b125-4e7c-81ac-f80ae324750f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ad880d33-b468-4acc-a3ac-f4d7a5aed96f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a2f4c679-30b9-49a0-92da-8e3dbded51b7"]
+  }],
+  "urls": ["https://localhost:44347/"],
+  "plugins": []
+}

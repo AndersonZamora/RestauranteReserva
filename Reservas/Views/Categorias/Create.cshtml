@@ -1,0 +1,43 @@
+﻿@model Reservas.Models.CategoriaPlato
+@{
+    ViewData["Title"] = "Crear Nueva Categoría";
+    Layout = "/Views/Shared/_LayoutRes.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Crear Nueva Categoría</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="card">
+                <div class="card-body">
+
+                    <form method="post" asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="NombreCategoria" class="control-label"> Nombre Categoría</label>
+                            <input id="NombreCategoria" asp-for="NombreCategoria" class="form-control" />
+                            <span asp-validation-for="NombreCategoria" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="crearMesa" value="Crear Categoria" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
+
